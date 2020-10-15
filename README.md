@@ -4,10 +4,13 @@ The dataset for TensorFlow Serving with Docker for Model Deployment is available
 ).
 
 ## Project Flow 
-  1.We predict Amazon product ratings based on plaintext reviews.
-  2.Export the Model as Protobuf
-  3.Start TensorFlow Serving with Docker
-  4.Setup a client (either gRPC or REST based)
-  5.Run the client
+
+1. Import model tf2-preview/nnlm-en-dim128 from Tensorflow Hub 
+2. Freeze the imported model and train single dense layer
+3. Export the Model as Protobuf
+4. Start TensorFlow Serving with Docker
+5. Setup a client (either gRPC or REST based)
+6. Run the client
+7. We predict Amazon product ratings based on plaintext reviews using gRPC or REST client.
   
  This is the project done from Coursera Project Network [course](https://www.coursera.org/projects/tensorflow-serving-docker-model-deployment) 
